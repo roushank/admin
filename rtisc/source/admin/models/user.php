@@ -64,6 +64,9 @@ class UserModel extends Model{
 		$post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 		$password = md5($post['password']);
 		if($post['submit']){
+			$this->query('Select * FROM users where id=:id');
+				$rows = $this->resultSet();
+				return $rows;
 			// Insert into MySQL
 			$this->query('UPDATE users SET user_name=:name, user_email=:email, user_pass=:password, user_role=:role, user_status=:user_status WHERE User_name=:name');
 			$this->bind(':name', $post['name']);
