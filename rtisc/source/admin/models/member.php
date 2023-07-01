@@ -61,12 +61,21 @@ class MemberModel extends Model{
 	}
 	//update
 	public function update(){
+		// 
 		// Sanitize POST
 		$post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 		$password = md5($post['password']);
-		if($post['submit']){
+		if($post['update']){
 		
-				$this->query('UPDATE members SET fullname=:name, email=:email, password =:password, gender=:gender, dor=:dor, plan=:plan, address=:address, contact=:contact WHERE user_id=:user_id');
+		
+		        //to get id and show in table:
+				// $this->query('Select * FROM members where user_id=:user_id');
+				// $rows = $this->resultSet();
+				// return $rows;
+				$this->query('UPDATE members SET fullname=:name, email=:email, password =:password, 
+				             gender=:gender, dor=:dor, plan=:plan, address=:address, contact=:contact 
+							WHERE user_id=:user_id');
+							$this->bind(':user_id', $post['user_id']);
 				$this->bind(':name', $post['name']);
 				$this->bind(':email', $post['email']);
 				$this->bind(':password', $password);
@@ -85,45 +94,3 @@ class MemberModel extends Model{
 		return;
 }
 }
-// //update
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// public function update(){
-// 	//same code
-// 	$post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
-// 		$password = md5($post['password']);
-// 		if($post['submit']){
-// 			// update to mysql 
-			
-// 				// to enter data
-// 				$this->query('UPDATE members SET fullname=:name, email=:email, password =:password, gender=:gender, dor=:dor, plan=:plan, address=:address, contact=:contact WHERE user_id=:user_id');
-// 				$this->bind(':name', $post['name']);
-// 				$this->bind(':email', $post['email']);
-// 				$this->bind(':password', $password);
-// 				$this->bind(':gender', $post['gender']);
-// 				$this->bind(':dor', $post['dor']);
-// 				$this->bind(':plan', $post['plan']);
-// 				$this->bind(':address', $post['address']);
-// 				$this->bind(':contact', $post['contact']);
-// 				$this->execute();
-// 				// Verify
-// 				if($this->lastInsertId()){
-// 					// Redirect
-// 					header('Location: '.ROOT_URL.'members');
-// 				}
-// 		}
-// 		return;
-// }

@@ -1,11 +1,15 @@
+
 <div class="content-wrapper d-flex align-items-center auth">
   <div class="row flex-grow">
     <div class="col-lg-8 mx-auto">
       <div class="auth-form-light text-left p-5">
         <h4>Update New User</h4>
-        <form class="pt-3" method="post" action="<?php $_SERVER['PHP_SELF']; ?>"> 
+        <form class="pt-3" method="post"  action="<?php $_SERVER['PHP_SELF']; ?>"> 
           <div class="form-group">
-            <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Enter Your Name">
+          <div class="form-group">
+            <input type="hidden" class="form-control form-control-lg" id="user_id" name="user_id">
+          </div>
+            <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Enter Your Name" >
           </div>
           <div class="form-group">
             <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Email">
@@ -57,7 +61,7 @@
           </div>
           
           <div class="mt-3">
-            <input class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" name="submit" type="submit" value="Submit">
+            <input class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" name="update" type="update" value="update">
           </div>
         </form>
       </div>
@@ -65,3 +69,4 @@
   </div>
 </div>
   <!-- content-wrapper ends -->
+ 
