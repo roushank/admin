@@ -5,7 +5,7 @@ $sql=mysqli_query($conn,"SELECT * FROM register where username='$username'");
 if(mysqli_num_rows($sql)>0)
 {
     echo "Username Already Exists"; 
-	
+	exit;
 }
 if(isset($_POST['save']))
 {

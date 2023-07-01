@@ -19,6 +19,7 @@ $row= mysqli_fetch_array($result);
 <html>
 <head>
 <title>Update Member Data</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <form name="frmUser" method="post" action="">

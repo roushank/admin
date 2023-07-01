@@ -35,10 +35,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/CRUD/login.php">Admin Login</a>
+                    <a class="nav-link" href="http://localhost/CRUD/login.php">USER Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/CRUD/register.php">Admin Register</a>
+                    <a class="nav-link" href="http://localhost/CRUD/register.php">USER Register</a>
                 </li>
             </ul>
 
@@ -53,11 +53,11 @@
                 <div class="card">
                     <div class="card-header">Login</div>
                     <div class="card-body">
-                        <form action="loginProcess.php" method="post" enctype="multipart/form-data">
+                        <form action="loginmemberProcess.php" method="post" enctype="multipart/form-data">
                             <div class="form-group row">
-                                <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                                <label for="member id" class="col-md-4 col-form-label text-md-right">MEMBER ID</label>
                                 <div class="col-md-6">
-                                    <input  name="username"  type="email" class="form-control" placeholder="Email" required="required">
+                                    <input  name="member_id"  type="text" class="form-control" placeholder="Member ID" required="required">
                                 </div>
                             </div>
 

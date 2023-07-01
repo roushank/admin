@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
-  <head>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </head>
-  <body>
-        <!--sidebar-->
+<body>
+    <!--sidebar-->
 <div class="container-fluid">
     <div class="row flex-nowrap">
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
@@ -90,38 +92,10 @@
             </div>
         </div>
         <div class="col py-3">
-            Add new user 
-            <!-----form---->
-            <form method="post" action="process.php">
-        First name:<br>
-        <input type="text" class="form-control form-control-lg" name="fullname">
-        <br>
-        email:<br>
-        <input type="text" class="form-control form-control-lg"  name="email">
-        <br>
-        password:<br>
-        <input type="text" class="form-control form-control-lg" name="password">
-        <br>
-        gender:<br>
-        <input type="gender" class="form-control form-control-lg" name="gender">
-        <br><br>
-        dor:<br>
-        <input type="date" class="form-control form-control-lg" name="dor">
-        <br><br>
-        amount:<br>
-        <input type="text" class="form-control form-control-lg"  name="amount">
-        <br><br>
-        paid_date:<br>
-        <input type="date" class="form-control form-control-lg" name="paid_date">
-        <br><br>
-        <input type="submit" class="form-control form-control-lg" name="save" value="add">
-        <a href="retrive.php"> click here to view member list</a>
-
-	</form>
+            Content area...
         </div>
     </div>
 </div> 
 <!--sidebar ends----->
-	
-  </body>
+</body>
 </html>
