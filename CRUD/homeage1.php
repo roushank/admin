@@ -24,13 +24,25 @@
                     </li>
                     <li>
                         <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">SIGN IN/SIGNUP</span> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="http://localhost/CRUD/register.php" class="nav-link px-0"> <span class="d-none d-sm-inline"></span> admin </a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/CRUD/loginmember.php" class="nav-link px-0"> <span class="d-none d-sm-inline"></span> user </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                             <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Member</span> </a>
                         <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                             <li class="w-100">
                                 <a href="http://localhost/CRUD/insert.php" class="nav-link px-0"> <span class="d-none d-sm-inline"></span> add member </a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline"></span> Member list </a>
+                                <a href="http://localhost/CRUD/retrive.php" class="nav-link px-0"> <span class="d-none d-sm-inline"></span> Member list </a>
                             </li>
                         </ul>
                     </li>
@@ -43,11 +55,10 @@
                             <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">User</span></a>
                         <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                             <li class="w-100">
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline"></span> add user</a>
+                                <a href="http://localhost/CRUD/memberprofile.php" class="nav-link px-0"> <span class="d-none d-sm-inline"></span> user profile</a>
                             </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">-> Update User </span> </a>
-                            </li>
+                           
+                                
                         </ul>
                     </li>
                     <li>
@@ -86,7 +97,7 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        <li><a class="dropdown-item" href="http://localhost/CRUD/signout.php">Sign out</a></li>
                     </ul>
                 </div>
             </div>
