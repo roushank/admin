@@ -49,7 +49,16 @@ include('../constant/connect.php');
                                                 </div>
                                             </div>
                                         </div>
-
+                                   <!---ADDITION OF PASSWORD--->
+                                  <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-sm-3 control-label">PASSWORD</label>
+                                                <div class="col-sm-9">
+                                                  
+                                                 <input type="password" id="boxx" name="password"   required class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
                                   
 
                                         <div class="form-group">

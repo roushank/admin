@@ -21,7 +21,7 @@
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="new_entry.php">Add Member</a></li>
                                 <li><a href="view_mem.php">Manage Member</a></li>
-                                <li><a href="#">Member login</a></li>
+                                <li><a href="loginmember.php">Member login</a></li>
                             </ul>
                         </li>
                          <li><a href="payments.php" aria-expanded="false"><i class="fa fa-dollar"></i><span class="hide-menu">Payments</span></a></li>
