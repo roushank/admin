@@ -4,7 +4,8 @@
 
 <?php include('../constant/layout/sidebar.php');?> 
 <link rel="stylesheet" href="popup_style.css">
-
+  <!--  Project Developed by: MayuriK. 
+ for any PHP, Codeignitor or Laravel work contact me through www.mayurik.com  -->
  <?php
 //session_start();
 //error_reporting(0);
@@ -42,7 +43,7 @@ include('../constant/connect.php');
                             </div>
                             <div class="card-body">
                                 <div class="input-states">
-                                    <form class="form-horizontal" method="POST"  name="userform" enctype="multipart/form-data" action="updatemanage.php" id="form1" name="form1">
+                                    <form class="form-horizontal" method="POST"  name="userform" enctype="multipart/form-data" action="updateroutine.php?id=<?php echo $_GET['id'];?>" id="form1" name="form1">
                                     <div class="form-group">
                                             <div class="row">
                                                 <label class="col-sm-3 control-label">Application Title</label>

@@ -4,7 +4,6 @@
 
 <?php include('../constant/layout/sidebar.php');?> 
 <link rel="stylesheet" href="popup_style.css">
-
  <?php
 //session_start();
 //error_reporting(0);
@@ -31,7 +30,7 @@ include('../constant/connect.php');
                 
                 <!-- /# row -->
                 <div class="row">
-                    <div class="col-lg-8" style="    margin-left: 10%;">
+                    <div class="col-lg-8" style=" margin-left: 10%;">
                         <div class="card">
                             <div class="card-title">
                                
