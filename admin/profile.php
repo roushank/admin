@@ -173,8 +173,7 @@ while($row=mysqli_fetch_array($query))
  for any PHP, Codeignitor or Laravel work contact me through https://www.mayurik.com  -->
 
 <link rel="stylesheet" href="popup_style.css">
-  <!--  Project Developed by: MayuriK. 
- for any PHP, Codeignitor or Laravel work contact me through www.mayurik.com  -->
+
 <?php if(!empty($_SESSION['success'])) {  ?>
 <div class="popup popup--icon -success js_success-popup popup--visible">
   <div class="popup__background"></div>

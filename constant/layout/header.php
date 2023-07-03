@@ -21,7 +21,7 @@ include('../constant/check.php');
              $result_header_logo = $con->query($sql_header_logo);
              $row_header_logo = mysqli_fetch_array($result_header_logo);
              ?>
-                      <!----- <b><img src="../assets/uploadImage/Logo/<?php echo $row_header_logo['logo'];?>" alt="homepage" class="dark-logo" style="width:100%;height:auto;"/></b>--i changed this bcz of background issue>
+                      <b><img src="../assets/uploadImage/Logo/<?php echo $row_header_logo['logo'];?>" alt="homepage" class="dark-logo" style="width:100%;height:auto;"/></b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
 

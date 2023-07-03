@@ -1,8 +1,7 @@
 
 
 <link rel="stylesheet" href="popup_style.css">
-  <!--  Project Developed by: MayuriK. 
- for any PHP, Codeignitor or Laravel work contact me through www.mayurik.com  --> 
+ 
 
    <?php
    session_start();
@@ -107,8 +106,7 @@ else {?>
                             <div class="login-form">
                                 
                                 <form method="POST">
-  <!--  Project Developed by: MayuriK. 
- for any PHP, Codeignitor or Laravel work contact me through www.mayurik.com  --> 
+ 
                                     <div class="form-group">
                                         <label>Email address</label>
                                         <input type="email" name="email" class="form-control" placeholder="Email" required="">

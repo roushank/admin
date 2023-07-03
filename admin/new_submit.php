@@ -3,7 +3,7 @@ include('../constant/connect.php');
 
  $memID=$_POST['m_id'];
  $password=$_POST['user_pass'];
- $uname=$_POST['u_name'];
+ $user_name=$_POST['user_name'];
  $stname=$_POST['street_name'];
  $city=$_POST['city'];
  $zipcode=$_POST['zipcode'];
@@ -16,9 +16,8 @@ include('../constant/connect.php');
  $plan=$_POST['plan'];
 
 //inserting into users table
-$query="CALL insertData('$memID','$password','$uname','$gender','$phn','$email','$dob','$jdate')";
-//$query="insert into users(username,password,gender,mobile,email,dob,joining_date,userid) values('$uname','$password','$gender','$phn','$email','$dob','$jdate','$memID')";
-
+//$query="CALL insertData('$memID','$password','$user_name','$gender','$phn','$email','$dob','$jdate')";
+$query="insert into users(username,password,gender,mobile,email,dob,joining_date,userid) values('$user_name','$password','$gender','$phn','$email','$dob','$jdate','$memID')";
     if(mysqli_query($con,$query)==1){
       //Retrieve information of plan selected by user
       $query1="select * from plan where pid='$plan'";

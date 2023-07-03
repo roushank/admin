@@ -80,8 +80,7 @@ if ($mail->send()) {
     
 ?>
 <link rel="stylesheet" href="popup_style.css">
-  <!--  Project Developed by: MayuriK. 
- for any PHP, Codeignitor or Laravel work contact me through www.mayurik.com  -->
+
 <div class="popup popup--icon -success js_success-popup popup--visible">
   <div class="popup__background"></div>
   <div class="popup__content">
@@ -96,8 +95,7 @@ if ($mail->send()) {
 </div>
 <?php } else { ?>
 <link rel="stylesheet" href="popup_style.css">
-  <!--  Project Developed by: MayuriK. 
- for any PHP, Codeignitor or Laravel work contact me through www.mayurik.com  -->
+
 <div class="popup popup--icon -error js_error-popup popup--visible">
   <div class="popup__background"></div>
   <div class="popup__content">
@@ -146,8 +144,7 @@ forEach(addButtonTrigger);
                             <div class="login-form">
                                 <h4>Forgot Password</h4>
                                 <form method="POST">
-  <!--  Project Developed by: MayuriK. 
- for any PHP, Codeignitor or Laravel work contact me through www.mayurik.com  --> 
+ 
                                     <div class="form-group">
                                         <label>Email address</label>
                                         <input type="email" name="email" class="form-control" placeholder="Email" required="">

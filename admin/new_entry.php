@@ -4,8 +4,7 @@
 
 <?php include('../constant/layout/sidebar.php');?> 
 <link rel="stylesheet" href="popup_style.css">
-  <!--  Project Developed by: MayuriK. 
- for any PHP, Codeignitor or Laravel work contact me through www.mayurik.com  -->
+
  <?php
 //session_start();
 //error_reporting(0);
@@ -51,23 +50,23 @@ include('../constant/connect.php');
                                         </div>
                                    <!---ADDITION OF PASSWORD--->
                                   <div class="form-group">
-                                            <div class="row">
-                                                <label class="col-sm-3 control-label">PASSWORD</label>
-                                                <div class="col-sm-9">
-                                                 <input type="password" id="boxx" name="user_pass"  placeholder="Enter Password"  required class="form-control">
-                                                </div>
+                                        <div class="row">
+                                            <label class="col-sm-3 control-label">PASSWORD</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" id="boxx" name="user_pass"  placeholder="Enter Password"  required class="form-control">
                                             </div>
                                         </div>
+                                    </div>
                                   
 
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <label class="col-sm-3 control-label">NAME</label>
-                                                <div class="col-sm-9">
-                                                 <input name="u_name" id="boxx"  required  class="form-control"/>
-                                                </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <label class="col-sm-3 control-label">NAME</label>
+                                            <div class="col-sm-9">
+                                                <input name="user_name" id="boxx"  required  class="form-control"/>
                                             </div>
                                         </div>
+                                    </div>
                                         
                                         <div class="form-group">
                                             <div class="row">

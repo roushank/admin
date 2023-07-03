@@ -77,7 +77,6 @@ include('../constant/connect.php');
             <!-- Container fluid  -->
             <div class="container-fluid">
                 <!-- Start Page Content -->
-                
                 <!-- /# row -->
                 <div class="row">
                     <div class="col-lg-8" style="    margin-left: 10%;">
@@ -113,7 +112,7 @@ include('../constant/connect.php');
                                             <div class="row">
                                                 <label class="col-sm-3 control-label">NAME</label>
                                                 <div class="col-sm-9">
-                                                <input type="text" id="boxxe" name="uname" value='<?php echo $name?>'  required  class="form-control"/>
+                                                <input type="text" id="boxxe" name="user_name" value='<?php echo $name?>'  required  class="form-control"/>
                                                 </div>
                                             </div>
                                         </div>

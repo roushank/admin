@@ -4,7 +4,7 @@ include('../constant/connect.php');
     
    $uid=$_POST['uid'];
    $password=$_POST['user_pass'];
-   $uname=$_POST['uname'];
+   $user_name=$_POST['user_name'];
    $gender=$_POST['gender'];
    $mobile=$_POST['phone'];
    $email=$_POST['email'];
@@ -20,7 +20,7 @@ include('../constant/connect.php');
    $fat=$_POST['fat'];
    $remarks=$_POST['remarks'];
     
-    $query1="update users set username='".$uname."',password='".$password."',gender='".$gender."',mobile='".$mobile."',email='".$email."',dob='".$dob."',joining_date='".$jdate."' where userid='".$uid."'";
+    $query1="update users set username='".$user_name."',password='".$password."',gender='".$gender."',mobile='".$mobile."',email='".$email."',dob='".$dob."',joining_date='".$jdate."' where userid='".$uid."'";
     //echo $query1;exit;
 
    if(mysqli_query($con,$query1)){

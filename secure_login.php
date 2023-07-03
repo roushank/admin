@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="popup_style.css">
-  <!--  Project Developed by: MayuriK. 
- for any PHP, Codeignitor or Laravel work contact me through www.mayurik.com  --> 
+ 
 <?php
 include './constant/connect.php';
 //session_start();

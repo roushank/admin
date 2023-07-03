@@ -1,9 +1,9 @@
 <!-- footer -->
            <style>
 .footer {
-  position: fixed;
+  /*position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: 0;*/
   width: 100%;
   background-color: #3a4651;
   color: white;
@@ -16,10 +16,8 @@
              $result_footer = $con->query($sql_footer);
              $row_footer = mysqli_fetch_array($result_footer);
              ?>
-             <?php //echo $row_footer['footer'];?>
-         <footer style="text-align: center" class="footer"><b><a style="color: yellow" href=" https://rtisc.in/" target="_blank">@ ALL RIGHTS RESERVED BY RAMSETH THAKUR INTERNATIONAL SPORTS COMPLEX </a> </b>
             
-            </footer> 
+      <?php //echo $row_footer['footer'];?>
             <!-- End footer -->
         </div>
         <!-- End Page wrapper  -->  

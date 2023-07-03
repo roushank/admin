@@ -4,8 +4,7 @@
 
 <?php include('../constant/layout/sidebar.php');?> 
 <link rel="stylesheet" href="popup_style.css">
-  <!--  Project Developed by: MayuriK. 
- for any PHP, Codeignitor or Laravel work contact me through www.mayurik.com  -->
+
  <?php
 //session_start();
 //error_reporting(0);
