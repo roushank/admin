@@ -28,6 +28,7 @@ include('../constant/connect.php');
                         while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
                     
                             $name    = $row['username'];
+                            $password = $row['password'];
                             $gender =$row['gender'];
                             $mobile = $row['mobile'];
                             $email   = $row['email'];

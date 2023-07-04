@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 03, 2023 at 11:57 AM
+-- Generation Time: Jul 04, 2023 at 11:24 AM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.26
 
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `address` (
 --
 
 INSERT INTO `address` (`id`, `streetName`, `state`, `city`, `zipcode`) VALUES
-('LM-668', 'Unit No.332, 3rd Floor, Central Tower,', 'Uttar Pradesh', 'Noida', '201301'),
+('LM-668', 'Jagdeo Path', 'Bihar', 'Patna', '800014'),
 ('LM-6681', 'Unit No.332, 3rd Floor, Central Tower,', 'Uttar Pradesh', 'Noida', '201301');
 
 -- --------------------------------------------------------
@@ -155,7 +155,7 @@ CREATE TABLE IF NOT EXISTS `logs` (
   `action` varchar(40) NOT NULL,
   `date` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `logs`
@@ -189,7 +189,10 @@ INSERT INTO `logs` (`id`, `userid`, `action`, `date`) VALUES
 (25, 'LM-6681', 'User Deleted Succesfully', '2023-07-03 16:08:37'),
 (26, 'LM-6681', 'Data Inserted Succesfully', '2023-07-03 16:09:06'),
 (27, 'LM-6681', 'User Deleted Succesfully', '2023-07-03 16:10:06'),
-(28, 'LM-6681', 'Data Inserted Succesfully', '2023-07-03 16:10:36');
+(28, 'LM-6681', 'Data Inserted Succesfully', '2023-07-03 16:10:36'),
+(29, 'LM-6681', 'Data Updated Succesfully', '2023-07-04 12:44:52'),
+(30, 'LM-668', 'Data Updated Succesfully', '2023-07-04 16:25:47'),
+(31, 'LM-668', 'Data Updated Succesfully', '2023-07-04 16:39:25');
 
 -- --------------------------------------------------------
 
@@ -1617,6 +1620,7 @@ INSERT INTO `timetable` (`tid`, `tname`, `day1`, `day2`, `day3`, `day4`, `day5`,
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
+  `id` int NOT NULL AUTO_INCREMENT,
   `userid` varchar(20) NOT NULL,
   `password` varchar(512) NOT NULL,
   `username` varchar(512) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
@@ -1625,18 +1629,19 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` varchar(512) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `dob` varchar(10) NOT NULL,
   `joining_date` varchar(10) NOT NULL,
-  PRIMARY KEY (`userid`) USING BTREE,
+  PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`) USING BTREE,
+  UNIQUE KEY `userid_2` (`userid`) USING BTREE,
   KEY `userid` (`userid`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`userid`, `password`, `username`, `gender`, `mobile`, `email`, `dob`, `joining_date`) VALUES
-('LM-668', 'abc', 'Roushan', 'Male', '9006561188', 'abc@abc.com', '2023-07-03', '2023-02-02'),
-('LM-6681', 'xcyz', 'Amit', 'Male', '1234567890', 'amit@amit.com', '1998-10-20', '2022-10-20');
+INSERT INTO `users` (`id`, `userid`, `password`, `username`, `gender`, `mobile`, `email`, `dob`, `joining_date`) VALUES
+(1, 'LM-668', 'abc', 'Roushan Kumar', 'Male', '9006561188', 'abc@abc.com', '2023-07-03', '2023-02-02'),
+(2, 'LM-6681', '123456', 'Amit', 'Male', '1234567890', 'amit@amit.com', '1998-10-20', '2022-10-20');
 
 --
 -- Triggers `users`

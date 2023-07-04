@@ -85,10 +85,6 @@ else {?>
     }
 ?>
 
-
-         
-
-
     <!-- Main wrapper  -->
     <div id="main-wrapper">
         <div class="unix-login">
