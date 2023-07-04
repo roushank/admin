@@ -23,7 +23,8 @@
                                 <li><a href="new_entry.php">Add Member</a></li>
                             </ul>
                         </li>
-                         <li><a href="payments.php" aria-expanded="false"><i class="fa fa-dollar"></i><span class="hide-menu">Payments</span></a></li>
+                         <li><a href="payments.php" aria-expanded="false"><i class="fa fa-rupee"></i><span class="hide-menu">Payments</span></a></li>
+                         <li><a href="gateway.php" aria-expanded="false"><i class="fa fa-bank"></i><span class="hide-menu">Payment Gateway</span></a></li>
                         <li id="health_status"><a href="new_health_status.php"><i class="fa fa-heart"></i><span class="hide-menu">Health Status</span></a>
                         <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-file-text-o"></i><span class="hide-menu">Plan</a>
                             <ul aria-expanded="false" class="collapse">
