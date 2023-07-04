@@ -1,6 +1,5 @@
 <?php include('inc/header.php');?>
 
-
 <body class="loggedin">
 		<nav class="navtop">
 			<div>
