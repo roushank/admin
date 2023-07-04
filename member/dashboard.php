@@ -106,7 +106,7 @@ JOIN address ON users.userid = address.id WHERE users.id =".$id;
                   <hr>
                   <div class="row">
                     <div class="col-sm-12">
-                      <a class="btn btn-info " target="__blank" href="edit.php">Edit</a>
+                      <a class="btn btn-info "  href="edit.php?userid=<?php echo $memberid;?>">Edit</a>
                     </div>
                   </div>
                 </div>
